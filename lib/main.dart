@@ -26,13 +26,9 @@ class MyApp extends StatelessWidget {
           create: (_) => SwitchBloc(const SwitchState()),
         ),
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
         title: 'Flutter Demo',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: const SwitchAndContainer(),
+        home: SwitchAndContainer(),
       ),
     );
   }
